@@ -16,7 +16,7 @@ app.include_router(auth.router)
 @app.get('/', tags=["About"])
 def main():
     return {
-        "Direct To API's": "http://localhost:8000/docs",
+        "Direct To API's": "http://13.232.246.216:8000/docs",
         "This Data is Static": "😊😊😊",
         "projectTitle": "AI Query System with FastAPI, Swagger, and DynamoDB",
         "projectDescription": "This is a small-scale backend project built using FastAPI, aimed at creating a structured and scalable API system with full Swagger (OpenAPI) documentation for seamless testing and integration. The goal is to provide a backend service where users can register, log in, and interact with an AI to query information about various products categorized under different domains.",
