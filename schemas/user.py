@@ -26,6 +26,7 @@ class UserOut(BaseModel):
     name: str
     emailID: EmailStr = Field(alias="email")
 
-    class Config:
-        orm_mode = True
-        allow_population_by_field_name = True  # Allows using both emailID and email
+    model_config = {
+        "from_attributes": True,
+        "validate_by_name": True
+    }
